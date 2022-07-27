@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "1038045865678",
-    "project_id": "controluisrael-aa34e",
-    "storage_bucket": "controluisrael-aa34e.appspot.com"
+    "project_number": "342630219742",
+    "firebase_url": "https://carrouisrael-default-rtdb.firebaseio.com",
+    "project_id": "carrouisrael",
+    "storage_bucket": "carrouisrael.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1038045865678:android:7840a1b4be14a69dd2129f",
+        "mobilesdk_app_id": "1:342630219742:android:dceba05733d7a08499e74f",
         "android_client_info": {
           "package_name": "com.nibemi.controluisrael"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1038045865678-dq68ccn3bmfkg6qpn0f7r6et2ps8g358.apps.googleusercontent.com",
+          "client_id": "342630219742-7t08c22g32bvs034vuvfh70bgo64q4eu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyApVyK64s0oe7RusHVjcfuNEyzD48Crg3Y"
+          "current_key": "AIzaSyBNzXQsSsfSNam30pYSHiE7j-9-hkwI31Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1038045865678-dq68ccn3bmfkg6qpn0f7r6et2ps8g358.apps.googleusercontent.com",
+              "client_id": "342630219742-7t08c22g32bvs034vuvfh70bgo64q4eu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
