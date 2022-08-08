@@ -40,9 +40,13 @@ public class MainActivity extends AppCompatActivity {
                 String password = txt_password.getText().toString();
 
                 if ((!username.isEmpty()) && (!password.isEmpty())){
-                    finish();
-                    Intent intent = new Intent(getApplicationContext(), PrincipalActivity.class);
-                    startActivity(intent);
+                    if (((username.equals("fxzambrano96@gmail.com")) && (password.equals("backinblack316"))) || ((username.equals("megatronica@gmail.com")) && (password.equals("admin")))){
+                        finish();
+                        Intent intent = new Intent(getApplicationContext(), PrincipalActivity.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(getApplicationContext(), "Las credenciales son incorrectas.", Toast.LENGTH_SHORT).show();
+                    }
                 }else{
                     Toast.makeText(getApplicationContext(), "Debe especificar un correo y contrasena", Toast.LENGTH_SHORT).show();
                 }

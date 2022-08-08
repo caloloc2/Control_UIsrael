@@ -32,6 +32,7 @@ public class PrincipalActivity extends AppCompatActivity {
     DatabaseReference myRefLocacion = database.getReference("locacion");
     DatabaseReference myRefAlarma = database.getReference("alarma");
     DatabaseReference myRefAhorro = database.getReference("ahorro");
+    DatabaseReference myRefInformacion = database.getReference("informacion");
     private long firstTime=0,secondTime=0;
 
     @Override
@@ -150,7 +151,9 @@ public class PrincipalActivity extends AppCompatActivity {
         btn_ver_imagenes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                finish();
+                Intent intent = new Intent(getApplicationContext(), NuevoActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -210,6 +213,21 @@ public class PrincipalActivity extends AppCompatActivity {
                     txt_alarma.setText("ALARMA ACTIVADA");
                 }else{
                     txt_alarma.setText("");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.w("TAG", "Failed to read value.", error.toException());
+            }
+        });
+
+        myRefInformacion.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String value = snapshot.getValue(String.class);
+                if (!value.isEmpty()){
+                    txt_alarma.setText(value);
                 }
             }
 
