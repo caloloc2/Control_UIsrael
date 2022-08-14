@@ -205,22 +205,22 @@ public class PrincipalActivity extends AppCompatActivity {
             }
         });
 
-        myRefAlarma.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String value = snapshot.getValue(String.class);
-                if (value.equals("1")){
-                    txt_alarma.setText("ALARMA ACTIVADA");
-                }else{
-                    txt_alarma.setText("");
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Log.w("TAG", "Failed to read value.", error.toException());
-            }
-        });
+//        myRefAlarma.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                String value = snapshot.getValue(String.class);
+//                if (value.equals("1")){
+//                    txt_alarma.setText("ALARMA ACTIVADA");
+//                }else{
+//                    txt_alarma.setText("");
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//                Log.w("TAG", "Failed to read value.", error.toException());
+//            }
+//        });
 
         myRefInformacion.addValueEventListener(new ValueEventListener() {
             @Override
@@ -241,8 +241,8 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue(String.class);
-                if (value.equals("1")){
-                    txt_ahorro.setText("MODO AHORRO ACTIVADO");
+                if (value.equals("0")){
+                    txt_ahorro.setText("ALARMA ACTIVADA");
                 }else{
                     txt_ahorro.setText("");
                 }
