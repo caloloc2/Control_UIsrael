@@ -128,7 +128,7 @@ public class PrincipalActivity extends AppCompatActivity {
                         public void run() {
                             myRef.setValue(0);
                         }
-                    }, 6000);
+                    }, 3000);
                     btn_activar_seguros.setText("Desactivar Seguros Puertas");
                 }else{
                     activacion[0] = 0;
@@ -140,7 +140,7 @@ public class PrincipalActivity extends AppCompatActivity {
                         public void run() {
                             myRef.setValue(0);
                         }
-                    }, 6000);
+                    }, 3000);
                     btn_activar_seguros.setText("Activar Seguros Puertas");
                 }
 
